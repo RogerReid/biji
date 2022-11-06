@@ -1,0 +1,21 @@
+## 一，首先创建一个腾讯云的存储桶
+- 重要的是将访问权限设置为“公有读私写”或者“公有读写”。
+- ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%9B%BE%E5%BA%8A1.png)
+- 桶的名不能重复，并且创建成功后不能更改
+	- ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/%E8%85%BE%E8%AE%AF%E4%BA%912.png)
+
+
+### 二，下载PicGo并配置
+- 1，再PicGo中图床设置中的腾讯云COS，这些标红的就是必写的。
+- 2，配置
+	- **Secretld和SecretKey和APPID：** 这个在腾讯云中的个人用户中的访问管理中有，找到访问管理中的访问密钥，里面有个API密钥就是它，刚开始我们需要新建一个密钥，然后会生成这三个。
+	- ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/%E8%85%BE%E8%AE%AF%E4%BA%915.png)
+
+	- **Bucket和存储区域：** 这里在创建的桶设置中有。在这桶列表中存储桶名称就是Bucket,这个所属区域就是设定存储区域。
+		- ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%9B%BE%E5%BA%8A6.png)
+	- **存储路径：** 这个就是在桶中所属的文件夹注意最后加个/
+## 三，在Obisidian中配置
+- 首先在社区中心下载**Image auto upload Plugin插件** 然后设置如图就好了（PicGo必须打开，建议设置成开机自启）。
+	- ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%9B%BE%E5%BA%8A7.png)
+### 四，结尾
+我们要在我们的账户里面留10快作用（这能用很久了），这个属于每天一付费，花的不是很多。

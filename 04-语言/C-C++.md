@@ -34,4 +34,13 @@ int main()
 }
 ```
 
+## 二，vector
+- 一种动态数组 他会自动给Int型的初始化为0，不像c语言的局部数组一样随机分配数字。
+- 常用初始化方法，
+	
+⚠️upload failed, check dev console
+
+
+
+
 

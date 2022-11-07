@@ -39,6 +39,50 @@ int main()
 - 常用初始化方法，
 - ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/202211061852805.png)
 
+## 三，函数的传址和传值
+### 1，传值
+就是函数将实参的值copy给形参。接下来我们看一个案例。
+```C
+void swap(int a, int b)
+{
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+int main()
+{
+	int test1=1, test2=2;
+	swap(test1, test2);
+	printf("test1=%d,test2=%d", test1, test2); // test1=1, test2=2 
+}
+```
+我们看这里使用了交换函数之后test1和test2的值并没有交换，这是为什么呢？其实这就是因为形参只是copy的实参的值，函数确实把实参的数交换了，但是函数执行完之后形参都释放了，并不会影响实参。
+
+
+### 2，传址
+就是将实参的地址传给形参，对形参的地址操作时侯会影响实参。我们来看一个案例。
+```C
+void swap(int* a, int* b)
+{
+	int temp;
+	// 这里都是操作的地址
+	temp = *a;
+	*a = *b;
+	*b = temp; 	
+}
+
+int main()
+{
+	int test_1=1, test_2=2;
+	// 因为函数是对地址进行操作，所有要进行取地址&
+	swap(&test_1, &test_2);
+	printf("test_1=%d, test_2=%d",test_1,test_2);  // test_1=2,test_2=1;
+}
+
+```
+这里我们看到经过交换函数后，这里的两个数交换了，因为这里是对实参的地址进行的操作。
 
 
 

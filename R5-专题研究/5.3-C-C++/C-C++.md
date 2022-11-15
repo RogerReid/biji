@@ -169,12 +169,12 @@ free(p2);
 	- b.clear()   如果是一维的会清空元素，但是不会回收内存。
 - 释放
 	- **用swap()强制回收内存**
-		```c++
-		vector<int> nums;   // 初始化的内存
-		nums.push_back(2)
-		vector<int> vtTemp;  // 定义一个临时的容器
-		vtTemp.swap(nums);    // 将capacity清零
+	```c++
+	vector<int>(v).swap(v);
+
+	vector(int)(v)是一个匿名对象，操作完了系统自动回收内存
 ```
+
 		
 ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/202211151516032.png)
 

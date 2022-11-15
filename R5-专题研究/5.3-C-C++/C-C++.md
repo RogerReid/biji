@@ -176,7 +176,7 @@ free(p2);
 		vtTemp.swap(nums);    // 将capacity清零
 ```
 		
-
+![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/202211151516032.png)
 
 ## 2，set集合
 - 属性

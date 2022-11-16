@@ -225,12 +225,12 @@ for(set<int>::iterator it = a.begin(); it != a.end(); it++){//特别注意，it�
 可以看作是无序的map容器，容器内部不会自行对存储的键值对进行排序。
 
 ## 5，队列queue
-### 基本操作
->- 1,queue<int> q; 定义空队列
+ 基本操作
+- 1,queue<int> q; 定义空队列
 > - 2, q.push(i);  压入队尾
 > - 3   q.front()  队头
 > - 4,  q.back()  队尾
-> - 5，q.size() 元素个数
+> - 5，q.size() 元素个数。
 
 ## 5，栈
 - 基本操作
@@ -238,3 +238,8 @@ for(set<int>::iterator it = a.begin(); it != a.end(); it++){//特别注意，it�
 	- a.push(i);   将一个元素压入栈中
 	- a.pop()；访问栈顶元素
 	- a.size()；移除栈顶元素
+栈是从高地址向低地址拓展（栈底地址高）
+栈是自顶向下增长
+
+
+

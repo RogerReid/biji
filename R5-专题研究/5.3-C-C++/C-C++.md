@@ -178,6 +178,27 @@ free(p2);
 		
 ![](https://tuceng-1312762148.cos.ap-nanjing.myqcloud.com/Obsidian/202211151516032.png)
 
+### 统计内存开辟次数
+```C++
+vector<int> v;
+		
+		int num = 0; // 统计开辟次数
+		int *p = NULL; 
+		for (int i=0; i<100000; i++)
+		{
+			v.push_back(i);
+			
+			if(p!=&v[0])
+			{
+				p = &v[0];
+				++num;
+			}
+		}
+		
+		cout << "num=" << num << endl;
+```
+
+
 ## 2，set集合
 - 属性
 	- 不会有重复元素，有重复会自动删除一个

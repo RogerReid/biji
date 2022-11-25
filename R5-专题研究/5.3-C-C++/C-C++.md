@@ -246,20 +246,8 @@ for(set<int>::iterator it = a.begin(); it != a.end(); it++){//特别注意，it�
   5，q.size() 元素个数。
 ```
 
-## 6，hashset
-- 基本操作
-```c++
-	1,HashSet<string>  name = new HashSet();  创建
-	2,hashset.add("abc");  
-	3,hashset.clear(); 清空。  
-	4,hashset.remove(Object o); 如果指定元素存在于此 set 中，则将其移除。  
-	5,hashset.isEmpty()  判空  
-	6,hashset.contains(Object o) 如果此 set 包含指定元素，则返回 true。  
-	7,hashset.size()  返回此 set 中的元素的数量（set 的容量）。  
-	8,System.out.println(hashset); 输出
-```
 
-## 7，string
+## 6，string
 - 基本操作
 ```c++
 	1,str.max_size()  出现的最大字符

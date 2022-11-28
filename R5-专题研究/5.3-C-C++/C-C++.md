@@ -288,3 +288,11 @@ for(set<int>::iterator it = a.begin(); it != a.end(); it++){//特别注意，it�
 
 
 # 六，一些常用的函数
+## 1，将整数转化为字符串
+### itoa函数
+```c++
+char *itoa(int i , char *s, int radix);
+char s[10] = {0};
+int i = 1725;
+itoa(i, s, radix);
+```

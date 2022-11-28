@@ -287,5 +287,4 @@ for(set<int>::iterator it = a.begin(); it != a.end(); it++){//特别注意，it�
 >2，栈是自顶向下增长
 
 
-
-
+# 六，一些常用的函数

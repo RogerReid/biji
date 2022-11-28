@@ -198,7 +198,20 @@ vector<int> v;
 		cout << "num=" << num << endl;
 ```
 
+### 求vector中的最小和最大值
+- 值
+```c++
+最大值：int maxValue = *max_element(v.begin(),v.end());
 
+最小值：int minValue = *min_element(v.begin(),v.end());
+```
+
+- 最大和最小值的索引
+```c++
+最大值下标：int maxPosition = max_element(v.begin(),v.end()) - v.begin();     // 因为返回的是地址
+
+最小值下标：int minPosition = min_element(v.begin(),v.end()) - v.begin();
+```
 ## 2，set集合
 - 属性
 	- 不会有重复元素，有重复会自动删除一个

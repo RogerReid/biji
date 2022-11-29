@@ -297,3 +297,59 @@ int i = 1725;
 itoa(i, s, radix);   // radix是表示数是几进制的
 ```
 **c语言中操作字符串是通过它在内存中的存储单元的首地址进行的，这是字符串的本质。** 
+
+# 七，创建一个二维数组
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+  
+
+int main()
+
+{
+  int rows = 100;
+  int columns = 100;
+  vector<vector<int>> a(rows, vector<int>(columns));  // 第一个100是行，第二个100是列。
+
+  for(int i = 1; i <= 3; i ++)
+
+  {
+
+    for( int j = 1; j <= i; j ++)
+
+    {
+
+      cin >> a[i][j];
+
+    }
+
+  }
+
+  
+
+  for(int i = 1;i <= 3; i ++)
+
+  {
+
+    for( int j = 1; j <= i; j ++)
+
+    {
+
+      cout << a[i][j];
+
+    }
+
+    cout << endl;
+
+  }
+
+  
+
+  
+  
+  
+
+}
+```

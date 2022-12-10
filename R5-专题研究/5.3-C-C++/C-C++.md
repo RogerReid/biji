@@ -104,6 +104,38 @@ itoa(i, s, radix);   // radix是表示数是几进制的
 ```
 **c语言中操作字符串是通过它在内存中的存储单元的首地址进行的，这是字符串的本质。** 
 
+## 4，判断一个字符是不是数字--isdigit函数
+
+- 头文件  
+```c++
+#include <ctype.h>
+```
+- 判断一个字符是不是数字（**注意** 是判断一个字符是不是数字），如果是一个数字就返回一个非0值，如果不是数字就返回0；
+```c++
+1.  #include <stdio.h>
+2.  #include <string.h>
+3.  #include <ctype.h>
+4.  int main()
+5.  {
+6.  char str[50] = { 0 };
+7.  int i, len, n=0;
+8.  gets(str);
+9.  for (i = 0, len = strlen(str); i < len; i++) {
+10.  if (isdigit(str[i])) {
+11.  n++;
+12.  }
+13.  }
+14.  printf("There are %d numbers in str\n", n);
+
+16.  return 0;
+17.  }
+18. // 运行结果
+19. /*
+20. we232sdji&^*2309d  
+There are 7 numbers in str
+21. */
+```
+
 # 四，内存分配
 [参考博客](https://www.cnblogs.com/wanghuaijun/p/6509016.html)
 ## 1，区域
